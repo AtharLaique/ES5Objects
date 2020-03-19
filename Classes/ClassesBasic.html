@@ -12,12 +12,19 @@
         */
         //for properteis and method of class we use this keyword
          function User(){
-             this.name;
-             this.id;
+             this.name="Athar";
+             this.id=1;
              this.getUser=function(){
                 return this.name;
              }
          }
+          /*--------------------Create Object of the class-------------------------
+            ->The new keyword makes the dummy object.
+            ->And this dummy object calls the function that is a constructor function.
+            ->Now all the properties with this keyword will assign to this dummy object.
+            ->In the end, it returns the address of this dummy object to an identifier. 
+          */
+          let user=new User()
         </script>
     </head>
     <body>
