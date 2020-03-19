@@ -34,6 +34,18 @@
            -> If we call without a new keyword, it returns undefined.
            */
            let user2=User();
+           /*--------------------Parameterized constructor -------------------------
+           -> We can also pass parameters to our constructor function 
+              and use them, and we don't pass them at the time of calling 
+              the constructor then its should undefine.
+           */
+           function PSL(tems){
+               this.teams=tems;
+           }
+           let pslOne=new PSL(5);
+           console.log(pslOne)
+           let pslTwo=new PSL();
+           console.log(pslTwo)
            
         </script>
     </head>
