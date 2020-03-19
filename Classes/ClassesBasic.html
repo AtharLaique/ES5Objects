@@ -30,6 +30,14 @@
            */
            user.email='athar@gmail.com'
            console.log(user)
+            /*--------------------Add property in constructor function ------------------------
+           -> We can't add property in constructor function using dot .
+           -> We add only in body of function using this keyword.
+           */
+            User.test="Its not a part of instnace , Its just proprty of User"
+            console.log(User);
+            let ahmed=new User();
+            console.log(ahmed)
            /*--------------------Constructor as a function-------------------------
            -> If we call without a new keyword, it returns undefined.
            */
