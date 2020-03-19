@@ -56,7 +56,19 @@
            console.log(pslOne)
            let pslTwo=new PSL();
            console.log(pslTwo)
-           
+            /*--------------------Can we make static class -------------------------
+            -> We can't make static class like c++ or any other language,
+               butt we can use same concept by implenting logic of adding
+               property using dot operator
+            */
+
+            function Test(){
+                this.message="Test for static class"
+            }
+            //Making static
+            Test.test1="test1"
+            Test.test2="test2"
+            console.log(Test.test1 + Test.test2)
         </script>
     </head>
     <body>
