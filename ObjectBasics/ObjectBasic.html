@@ -28,7 +28,7 @@
             o['key']='We can add using key value pair'
             /*--------------------Adding function as property -------------------------*/
             function show(){
-                alert("I am a function")
+                console.log('tes')
             }
             o.show=show;
             /*--------------------Anonymous function as property -------------------------*/
@@ -46,9 +46,9 @@
                 console.log(this.show)
             };
           /*--------------------Access property of object -------------------------*/
-              console.log(o.propertyOne)
+              console.log(o['propertyOne'])
               console.log(o.key)
-              console.log(o.show())
+              console.log(o['show']())// we can also call funcction like this
               console.log(o.shows())
 
     </script>
