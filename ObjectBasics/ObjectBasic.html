@@ -59,6 +59,21 @@
            -> We can list the property of the object but for copy of the obejct we can't.
            */
            console.log(Object.keys(o))
+           /*--------------------Delete Property from the object -------------------------*/
+           delete o.propertyOne;
+           console.log(Object.keys(o))
+            /*--------------------Itrate on object -------------------------*/
+            for (props in o)
+            {
+                //if function
+                if('function'==typeof(o[props])){
+                    o[props]();
+                }//if property
+                else{
+                    console.log(o[props])
+                }
+            }
+           
     </script>
 </head>
 
