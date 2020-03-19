@@ -35,7 +35,7 @@
             o.shows=function(){
                 alert("I am a Anonymous function")
             };
-              /*--------------------Acces property of caller object -------------------------
+              /*--------------------Access property of calling object -------------------------
               -> By using this we can achive class like functonality
               -> As this function is part of 'o', 'propertyOne','key' and 'show' will be searched 
                  first as local variable, then in 'calling' object members 
@@ -45,9 +45,12 @@
                 console.log(this.key)
                 console.log(this.show)
             };
-          
+          /*--------------------Access property of object -------------------------*/
+              console.log(o.propertyOne)
+              console.log(o.key)
+              console.log(o.show())
+              console.log(o.shows())
 
-              
     </script>
 </head>
 
