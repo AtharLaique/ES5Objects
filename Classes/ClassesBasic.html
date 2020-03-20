@@ -89,6 +89,13 @@
                 /*--------------------Prototype chaining -------------------------
              -> instance-> prototype that is in constructor of instnce->prototype that is in constructor of Object Data type->undefined
              */
+              /*--------------------Use of Object prototype (v.v.v imp)-------------------------
+             -> If we add some thing in Object data type prototype we can accese through any
+                object of any class.
+             */
+             Object.prototype.ProtoFunc=function (){console.log("Anyone can access me")}
+             console.log(sheard.ProtoFunc())
+             console.log(pslOne.ProtoFunc())
         </script>
     </head>
     <body>
