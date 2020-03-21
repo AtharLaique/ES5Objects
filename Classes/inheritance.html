@@ -7,6 +7,34 @@
         -> Here, we will implement inheritance in JS.
         -> To implement the inheritance, we need to understand the concept of prototype chaining.
         */
+
+
+        /*--------------------------  Prototype Chaining -----------------------------------------
+        -> Prototype chaining is a way that follow javascript engine to search the properties or methods
+           that we want to access.
+        -> Example:
+           Our own Constructor that inherit tha Object type by default.   
+           function User (){
+               this.name;
+               this.email;
+               this.password;
+           }
+
+           Instence of User type
+           let ali= new User();
+
+           Now accessing something through this instence.
+           ali.toString();
+        
+           Let's see how javascript engine search this.
+           instence dont have prototype.
+
+           searched in User (undefined) -> prototype of User(undefinde)->prototype of Object (find)->return
+           it is prototype chaining.
+
+
+
+        */
         </script>
     </head>
     <body>
